@@ -1,3 +1,2 @@
 # restart-java-ansible
-Update
-Sumanth
+Dynatrace Sumanth
