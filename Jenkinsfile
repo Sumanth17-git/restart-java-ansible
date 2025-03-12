@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        ANSIBLE_PLAYBOOK = "/home/ansible/ansible_scripts/restart_buggyapp.yml"
+        ANSIBLE_PLAYBOOK = "/home/ansible/ansible_scripts/restart_java_app.yml"
         ANSIBLE_INVENTORY = "/home/ansible/ansible_scripts/inventory.ini"
     }
 
@@ -11,7 +11,7 @@ pipeline {
             steps {
                 script {
                     git branch: 'main',
-                        credentialsId: 'github-token',  // Use the ID you set in Jenkins
+                        credentialsId: 'dynatrace-github',  // Use the ID you set in Jenkins
                         url: 'https://github.com/Sumanth17-git/restart-java-ansible.git'
                 }
             }
