@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        ANSIBLE_PLAYBOOK = "/home/ansible/ansible-scripts/restart_java_app.yml"
-        ANSIBLE_INVENTORY = "/home/ansible/ansible-scripts/inventory.ini"
+        ANSIBLE_PLAYBOOK = "/home/ansible/ansible-script/restart_java_app.yml"
+        ANSIBLE_INVENTORY = "/home/ansible/ansible-script/inventory.ini"
     }
 
     stages {
